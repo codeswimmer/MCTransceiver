@@ -13,6 +13,11 @@ iOS library providing an abstracted interface to the Multipeer Connectivity API
 
 The library uses ARC. It has been developed using Xcode 5 & tested against iOS 7.x.
 
+##### Documentation
+The Xcode project includes a `Documentation` target which can be used to generate documentation for the API. It requires the use of [appledoc](http://gentlebytes.com/appledoc/). Once you've built the documentation it will be available through Xcode's Documentation window.
+
+The latest [HTML documentation](https://github.com/KeithErmel/MCTransceiver/docs/index.html) is also available.
+
 ##### Examples
 The <code>[Examples](https://github.com/KeithErmel/MCTransceiver/tree/master/Examples)</code> folder includes a the [MCTransceiverExample](https://github.com/KeithErmel/MCTransceiver/tree/master/Examples/MCTransceiverExample) project that demonstrates communication between two iOS devices: one acting as the advertiser <code>(host)</code> the other as the browser <code>(join)</code>.
 

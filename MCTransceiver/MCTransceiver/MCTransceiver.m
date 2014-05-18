@@ -24,6 +24,11 @@ NSString *NSStringFromMCTransceiverMode(MCTransceiverMode mode)
 
 
 @interface MCTransceiver ()<MCSessionDelegate, MCNearbyServiceAdvertiserDelegate, MCNearbyServiceBrowserDelegate>
+
+/* TODO: remove this
+ It's only used for configuration purposes during initialization. Better to simply
+ pass the peerID into the configuration methods.
+ */
 @property (strong, nonatomic, readonly) MCPeerID *peerID;
 @property (strong, nonatomic, readonly) MCSession *session;
 @property (strong, nonatomic, readonly) MCNearbyServiceAdvertiser *advertiser;

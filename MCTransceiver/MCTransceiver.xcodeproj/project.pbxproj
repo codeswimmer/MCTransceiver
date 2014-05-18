@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		9E7ABF4119291CA50043534D /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9E7ABF4419291CA50043534D /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				9E7ABF4519291CB80043534D /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		9EA80C221912DD990001CBD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA80C211912DD990001CBD5 /* Foundation.framework */; };
 		9EA80C271912DD990001CBD5 /* MCTransceiver.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9EA80C261912DD990001CBD5 /* MCTransceiver.h */; };
@@ -204,6 +218,7 @@
 			targets = (
 				9EA80C1D1912DD990001CBD5 /* MCTransceiver */,
 				9EA80C2D1912DD9A0001CBD5 /* MCTransceiverTests */,
+				9E7ABF4119291CA50043534D /* Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -218,6 +233,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E7ABF4519291CB80043534D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"Keith Ermel\" \\\n--company-id \"name.keithermel\" \\\n--output \"~/Downloads/${PROJECT_NAME}\" \\\n--install-docset \\\n--logformat xcode \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--merge-categories \\\n--exit-threshold 2 \\\n--docset-platform-family iphoneos \\\n--ignore \"*.m\" \\\n--index-desc \"${PROJECT_DIR}/../README.md\" \\\n\"${PROJECT_DIR}/${PROJECT_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9EA80C1A1912DD990001CBD5 /* Sources */ = {
@@ -258,6 +289,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9E7ABF4219291CA50043534D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9E7ABF4319291CA50043534D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		9EA80C3F1912DD9A0001CBD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -389,6 +434,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9E7ABF4419291CA50043534D /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E7ABF4219291CA50043534D /* Debug */,
+				9E7ABF4319291CA50043534D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		9EA80C191912DD990001CBD5 /* Build configuration list for PBXProject "MCTransceiver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -405,6 +458,7 @@
 				9EA80C431912DD9A0001CBD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9EA80C441912DD9A0001CBD5 /* Build configuration list for PBXNativeTarget "MCTransceiverTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +467,7 @@
 				9EA80C461912DD9A0001CBD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
