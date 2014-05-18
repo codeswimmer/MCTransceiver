@@ -7,7 +7,7 @@ iOS library providing an abstracted interface to the Multipeer Connectivity API
 * Quickly add ability for two iOS devices to seamlessly pair and communicate via the [Multipeer Connectivity Framework](https://developer.apple.com/library/ios/documentation/MultipeerConnectivity/Reference/MultipeerConnectivityFramework/_index.html#//apple_ref/doc/uid/TP40013328).
 
 ##### Using
-* Clone repo
+* Clone repo (or download ZIP file)
 * Drag & drop <code>ABTools.xcodeproj</code> into your workspace
 * Follow [Apple's documentation](https://developer.apple.com/library/ios/technotes/iOSStaticLibraries/Articles/configuration.html) on how to use static libraries in iOS
 
@@ -16,7 +16,7 @@ The library uses ARC. It has been developed using Xcode 5 & tested against iOS 7
 ##### Documentation
 The Xcode project includes a `Documentation` target which can be used to generate documentation for the API. It requires the use of [appledoc](http://gentlebytes.com/appledoc/). Once you've built the documentation it will be available through Xcode's Documentation window.
 
-The latest [HTML documentation](https://github.com/KeithErmel/MCTransceiver/docs/index.html) is also available.
+The latest [HTML documentation](http://keithermel.github.io/MCTransceiver/docs/Classes/MCTransceiver.html) is also available.
 
 ##### Examples
 The <code>[Examples](https://github.com/KeithErmel/MCTransceiver/tree/master/Examples)</code> folder includes a the [MCTransceiverExample](https://github.com/KeithErmel/MCTransceiver/tree/master/Examples/MCTransceiverExample) project that demonstrates communication between two iOS devices: one acting as the advertiser <code>(host)</code> the other as the browser <code>(join)</code>.
