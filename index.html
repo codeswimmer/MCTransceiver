@@ -1,33 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>MCTransceiver by KeithErmel</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <title>MCTransceiver by KeithErmel</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>MCTransceiver</h1>
-        <p>iOS library providing an abstracted interface to the Multipeer Connectivity API</p>
-        <p class="view"><a href="https://github.com/KeithErmel/MCTransceiver">View the Project on GitHub <small>KeithErmel/MCTransceiver</small></a></p>
-        <ul>
-          <li><a href="https://github.com/KeithErmel/MCTransceiver/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/KeithErmel/MCTransceiver/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/KeithErmel/MCTransceiver">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>MCTransceiver</h1>
+          <h2>iOS library providing an abstracted interface to the Multipeer Connectivity API</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/KeithErmel/MCTransceiver/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/KeithErmel/MCTransceiver/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/KeithErmel/MCTransceiver" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
 <a name="mctransceiver" class="anchor" href="#mctransceiver"><span class="octicon octicon-link"></span></a>MCTransceiver</h1>
 
 <p>iOS library providing an abstracted interface to the Multipeer Connectivity API</p>
@@ -51,7 +55,7 @@
 
 <p>The Xcode project includes a <code>Documentation</code> target which can be used to generate documentation for the API. It requires the use of <a href="http://gentlebytes.com/appledoc/">appledoc</a>. Once you've built the documentation it will be available through Xcode's Documentation window.</p>
 
-<p>The latest <a href="docs/Classes/MCTransceiver.html">HTML documentation</a> is also available.</p>
+<p>The latest <a href="https://github.com/KeithErmel/MCTransceiver/docs/index.html">HTML documentation</a> is also available.</p>
 
 <h5>
 <a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples</h5>
@@ -63,13 +67,7 @@
 
 <ul>
 <li><p>While this API is presented through a single interface -- <a href="https://github.com/KeithErmel/MCTransceiver/blob/master/MCTransceiver/MCTransceiver/MCTransceiver.h">MCTransceiver</a> -- the tasks of advertising and browsing are provided separately, through the <code>startAdvertising:</code> and <code>startBrowsing:</code> methods.</p></li>
-<li>
-<p>Currently the only way to send data from one device to another is through the <code>sendUnreliableData:toPeers:completion</code> method. From the documentation, sending data unreliably means:</p>
-
-<blockquote>
-<p>Messages to peers should be sent immediately without socket-level queueing. If a message cannot be sent immediately, it should be dropped. The order of messages is not guaranteed.</p>
-</blockquote>
-</li>
+<li><p>Currently the only way to send data from one device to another is through the <code>sendUnreliableData:toPeers:completion</code> method. Application-critical data should not be sent using this. See <code>MCSession</code>'s  <a href="https://developer.apple.com/Library/ios/documentation/MultipeerConnectivity/Reference/MCSessionClassRef/Reference/Reference.html#//apple_ref/doc/uid/TP40013322-CH1-SW24">sendData:toPeers:withMode:error:</a> (specifically <a href="https://developer.apple.com/Library/ios/documentation/MultipeerConnectivity/Reference/MCSessionClassRef/Reference/Reference.html#//apple_ref/doc/c_ref/MCSessionSendDataMode">MCSessionSendDataMode</a>) for details.</p></li>
 <li>
 <p>Future additions to this API will provide the ability to:</p>
 
@@ -80,13 +78,15 @@
 </ul>
 </li>
 </ul>
-      </section>
+        </section>
+
+        <footer>
+          MCTransceiver is maintained by <a href="https://github.com/KeithErmel">KeithErmel</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
     </div>
-    <footer>
-      <p>Project maintained by <a href="https://github.com/KeithErmel">KeithErmel</a></p>
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-    </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
   </body>
 </html>
